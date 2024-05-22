@@ -9,3 +9,4 @@ from reinvent_scoring.scoring.score_components.physchem.num_rings import NumRing
 from reinvent_scoring.scoring.score_components.physchem.rot_bonds import RotatableBonds
 from reinvent_scoring.scoring.score_components.physchem.slogp import SlogP
 from reinvent_scoring.scoring.score_components.physchem.graph_length import GraphLength
+from reinvent_scoring.scoring.score_components.physchem.scscore import SCScore

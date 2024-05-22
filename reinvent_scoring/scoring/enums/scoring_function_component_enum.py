@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class ScoringFunctionComponentNameEnum:
+    SCSCORE = "scscore"
     PARALLEL_ROCS_SIMILARITY = "parallel_rocs_similarity"
     SELECTIVITY = "selectivity"
     PREDICTIVE_PROPERTY = "predictive_property"

@@ -12,7 +12,8 @@ from reinvent_scoring.scoring.score_components import TanimotoSimilarity, \
     LinkerLengthRatio, LinkerGraphLength, LinkerEffectiveLength, LinkerNumRings, LinkerNumAliphaticRings, \
     LinkerNumAromaticRings, LinkerNumSPAtoms, LinkerNumSP2Atoms, LinkerNumSP3Atoms, LinkerNumHBA, \
     LinkerNumHBD, LinkerMolWeight, LinkerRatioRotatableBonds, DockStream, NumAromaticRings, NumAliphaticRings
-    
+
+from reinvent_scoring.scoring.score_components import SCScore   
 from reinvent_scoring.scoring.score_components.rest.general_rest_component import GeneralRESTComponent
    
 from reinvent_scoring.scoring.score_components.console_invoked import Icolos
@@ -78,7 +79,9 @@ class ScoreComponentFactory:
             enum.DOCKSTREAM: DockStream,
             enum.ICOLOS: Icolos,
             # enum.AIZYNTH: BuildingBlockAvailabilityComponent
-            enum.GENERAL_REST: GeneralRESTComponent
+            enum.GENERAL_REST: GeneralRESTComponent,
+            
+            enum.SCSCORE: SCScore
         }
         return component_map
 
